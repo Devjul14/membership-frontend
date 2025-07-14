@@ -20,13 +20,13 @@ import {
 } from 'wagmi';
 
 import { publicProvider } from 'wagmi/providers/public';
-import { sepolia } from 'wagmi/chains';
+import { arbitrum } from 'wagmi/chains'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const projectId = "21d01d1f13a401a1468af3a4b576d8c1"; 
 
 const { chains, publicClient } = configureChains(
-  [sepolia],
+  [arbitrum],
   [publicProvider()]
 );
 
